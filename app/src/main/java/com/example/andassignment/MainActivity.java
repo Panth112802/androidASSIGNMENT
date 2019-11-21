@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import com.example.andassignment.R;
 
+RecyclerView CivilizationActivity ;
+        RecyclerView.Adapter CivilizationsAdapter;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,4 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+    mPokemonList = findViewById(R.id.rv);
+       mPokemonList.hasFixedSize();
+       mPokemonList.setLayoutManager(new LinearLayoutManager(this));
+
+    mPokemonAdapter = new PokemonAdapter();
+       mPokemonList.setAdapter(mPokemonAdapter);
 }
