@@ -25,4 +25,36 @@ public class Civilization {
 
 
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getExpansion() {
+        return expansion;
+    }
+
+    public String getArmy_type() {
+        return army_type;
+    }
+
+    public String getUnique_unit() {
+        return unique_unit;
+    }
+
+    public String getUnique_tech() {
+        return unique_tech;
+    }
+
+    public String getTeam_bonus() {
+        return team_bonus;
+    }
+
+    public String getCivilization_bonus() {
+        return civilization_bonus;
+    }
 }
